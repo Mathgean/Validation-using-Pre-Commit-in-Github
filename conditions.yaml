@@ -1,0 +1,30 @@
+mandatory:
+  - name
+  - phoneNo
+  - Married
+
+dependency:
+  employed:
+    condition: true
+    mandatory:
+      - employmentType
+
+  Married:
+    condition: true
+    mandatory:
+      - spouse
+
+type:
+  name: str
+  age: int
+  phoneNo: int
+
+length:
+  phoneNo:
+    - 10
+  name:
+    - 3
+    - 20
+  age:
+    - 1
+    - 3
